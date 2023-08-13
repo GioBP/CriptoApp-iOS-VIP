@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF072E8C2A87F6BB004540A9 /* CoinsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF072E8B2A87F6BB004540A9 /* CoinsStore.swift */; };
+		CF072E8E2A87F6C8004540A9 /* GlobalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF072E8D2A87F6C8004540A9 /* GlobalStore.swift */; };
 		CFCD089B2A843F4000094625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD089A2A843F4000094625 /* AppDelegate.swift */; };
 		CFCD089D2A843F4000094625 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD089C2A843F4000094625 /* SceneDelegate.swift */; };
 		CFCD089F2A843F4000094625 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD089E2A843F4000094625 /* ViewController.swift */; };
@@ -24,9 +26,12 @@
 		CFDA01342A8591670072FF01 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA01332A8591670072FF01 /* Extensions.swift */; };
 		CFDA01362A8599910072FF01 /* CoinsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA01352A8599910072FF01 /* CoinsRouter.swift */; };
 		CFDA01382A8599B60072FF01 /* GlobalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA01372A8599B60072FF01 /* GlobalRouter.swift */; };
+		CFF1D2122A88F6F800453DC3 /* LisCoinsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF1D2112A88F6F800453DC3 /* LisCoinsDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF072E8B2A87F6BB004540A9 /* CoinsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsStore.swift; sourceTree = "<group>"; };
+		CF072E8D2A87F6C8004540A9 /* GlobalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStore.swift; sourceTree = "<group>"; };
 		CFCD08972A843F4000094625 /* marketCoins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = marketCoins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCD089A2A843F4000094625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFCD089C2A843F4000094625 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +51,7 @@
 		CFDA01332A8591670072FF01 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CFDA01352A8599910072FF01 /* CoinsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsRouter.swift; sourceTree = "<group>"; };
 		CFDA01372A8599B60072FF01 /* GlobalRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalRouter.swift; sourceTree = "<group>"; };
+		CFF1D2112A88F6F800453DC3 /* LisCoinsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LisCoinsDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 		CFCD08AF2A84401C00094625 /* DataProvider */ = {
 			isa = PBXGroup;
 			children = (
+				CFF1D2102A88F6DC00453DC3 /* CoinsDataProvider */,
 				CFCD08BB2A845C4E00094625 /* NetworkRepository */,
 				CFCD08BC2A845C7D00094625 /* GenericDataProvider.swift */,
 			);
@@ -152,8 +159,18 @@
 			isa = PBXGroup;
 			children = (
 				CFDA01312A858E000072FF01 /* GenericStore.swift */,
+				CF072E8B2A87F6BB004540A9 /* CoinsStore.swift */,
+				CF072E8D2A87F6C8004540A9 /* GlobalStore.swift */,
 			);
 			path = Store;
+			sourceTree = "<group>";
+		};
+		CFF1D2102A88F6DC00453DC3 /* CoinsDataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				CFF1D2112A88F6F800453DC3 /* LisCoinsDataProvider.swift */,
+			);
+			path = CoinsDataProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,11 +248,14 @@
 				CFCD08B22A84428600094625 /* CoinModel.swift in Sources */,
 				CFDA01362A8599910072FF01 /* CoinsRouter.swift in Sources */,
 				CFDA01382A8599B60072FF01 /* GlobalRouter.swift in Sources */,
+				CFF1D2122A88F6F800453DC3 /* LisCoinsDataProvider.swift in Sources */,
 				CFCD08B82A8456B200094625 /* GraphicDataModel.swift in Sources */,
 				CFDA01322A858E000072FF01 /* GenericStore.swift in Sources */,
 				CFCD089F2A843F4000094625 /* ViewController.swift in Sources */,
 				CFDA01302A858CC70072FF01 /* API.swift in Sources */,
 				CFCD089B2A843F4000094625 /* AppDelegate.swift in Sources */,
+				CF072E8C2A87F6BB004540A9 /* CoinsStore.swift in Sources */,
+				CF072E8E2A87F6C8004540A9 /* GlobalStore.swift in Sources */,
 				CFDA01342A8591670072FF01 /* Extensions.swift in Sources */,
 				CFCD08B42A844C9500094625 /* CurrentDataModel.swift in Sources */,
 				CFCD08BA2A84574D00094625 /* GlobalModel.swift in Sources */,
